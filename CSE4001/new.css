@@ -1,0 +1,28 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+height: 100%;
+width: 100%;
+}
+body{
+    font-size: 150%;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/043/347/379/non_2x/cute-dinosaur-cartoon-tyrannosaurus-rex-vector.jpg");
+    color: red;
+}
+/* h1.center{
+    text-align: center;
+    color: rgb(222, 10, 119);
+} */
+h1{
+    padding: 0.5ems 0.5ems;
+    border-style: dashed;
+    margin: 0.5ems 0.5ems;
+}
+h2{
+    padding: 0.5ems 0.5ems;
+    border-style: dashed;
+    margin: 0.5ems 0.5ems;
+}

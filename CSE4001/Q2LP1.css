@@ -1,0 +1,32 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+height: 100%;
+width: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.form-container {
+    width: 600px;
+    margin: auto;
+    border: 10px solid black;
+    padding: 20px;
+}
+.form-container h2 {
+    color: red;
+    text-align: center;
+}
+table {
+    width: 100%;
+}
+td {
+    padding: 8px;
+    vertical-align: top;
+}
+textarea {
+    width: 100%;
+}

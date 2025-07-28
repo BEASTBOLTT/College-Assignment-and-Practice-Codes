@@ -1,0 +1,16 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+height: 100%;
+width: 100%;
+}
+body {
+    background-image: url('https://www.atlasandboots.com/wp-content/uploads/2019/05/cuernos-del-paine-most-beautiful-mountains-in-the-world.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px;
+}
