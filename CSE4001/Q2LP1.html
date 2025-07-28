@@ -1,0 +1,117 @@
+<!-- Devam Pandey
+23BCE10731 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Employee Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            width: 600px;
+            margin: auto;
+            border: 10px solid black;
+            padding: 20px;
+        }
+        .form-container h2 {
+            color: red;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 8px;
+            vertical-align: top;
+        }
+        textarea {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Employee Registration Form</h2>
+        <form>
+            <table>
+                <tr>
+                    <td>Title:</td>
+                    <td>
+                        <input type="radio" name="title" value="Mr."> Mr.
+                        <input type="radio" name="title" value="Mrs."> Mrs.
+                        <input type="radio" name="title" value="Ms."> Ms.
+                    </td>
+                </tr>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" name="firstname" /></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" name="lastname" /></td>
+                </tr>
+                <tr>
+                    <td>Mail Address1:</td>
+                    <td><input type="text" name="address1" /></td>
+                </tr>
+                <tr>
+                    <td>Mail Address2:</td>
+                    <td><input type="text" name="address2" /></td>
+                </tr>
+                <tr>
+                    <td>City:</td>
+                    <td><input type="text" name="city" /></td>
+                </tr>
+                <tr>
+                    <td>State:</td>
+                    <td>
+                        <select name="state">
+                            <option>Gujarat</option>
+                            <option>Maharashtra</option>
+                            <option>Delhi</option>
+                            <option>UP</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Zip:</td>
+                    <td><input type="text" name="zip" /></td>
+                </tr>
+                <tr>
+                    <td>Upload Photo:</td>
+                    <td><input type="file" name="photo" /></td>
+                </tr>
+                <tr>
+                    <td>E-Mail:</td>
+                    <td><input type="email" name="email" /></td>
+                </tr>
+                <tr>
+                    <td>Mobile:</td>
+                    <td><input type="tel" name="mobile" /></td>
+                </tr>
+                <tr>
+                    <td>Languages known:</td>
+                    <td>
+                        <input type="checkbox" name="lang" value="Gujarati"> Gujarati
+                        <input type="checkbox" name="lang" value="Hindi"> Hindi
+                        <input type="checkbox" name="lang" value="English"> English
+                        <input type="checkbox" name="lang" value="Marathi"> Marathi
+                    </td>
+                </tr>
+                <tr>
+                    <td>Additional Information:</td>
+                    <td><textarea rows="4" placeholder="Optional..."></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Submit" />
+                        <input type="reset" value="Reset" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

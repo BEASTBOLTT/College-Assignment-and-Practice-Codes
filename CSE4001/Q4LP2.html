@@ -1,0 +1,143 @@
+<!-- Devam Pandey
+23BCE10731 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #000;
+    }
+    td {
+      padding: 10px;
+      border: 1px solid #000;
+      vertical-align: top;
+    }
+    h2 {
+      text-align: center;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="number"],
+    select {
+      width: 90%;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Registration Form</h2>
+
+  <form>
+    <table>
+      <tr>
+        <td><strong>Student Name</strong></td>
+        <td><input type="text" placeholder="First Name"></td>
+        <td><input type="text" placeholder="Middle Name"></td>
+        <td><input type="text" placeholder="Last Name"></td>
+      </tr>
+
+      <tr>
+        <td><strong>Father’s Name</strong></td>
+        <td colspan="3"><input type="text" placeholder="Enter your father's Name" style="width: 98%;"></td>
+      </tr>
+
+      <tr>
+        <td><strong>Mother’s Name</strong></td>
+        <td colspan="3"><input type="text" placeholder="Enter your mother's Name" style="width: 98%;"></td>
+      </tr>
+
+      <tr>
+        <td><strong>Date of Birth</strong></td>
+        <td><input type="date"></td>
+        <td><strong>Gender</strong></td>
+        <td>
+          <input type="radio" name="gender" value="male"> Male
+          <input type="radio" name="gender" value="female"> Female
+        </td>
+      </tr>
+
+      <tr>
+        <td><strong>Category</strong></td>
+        <td>
+          <input type="radio" name="category" value="Gen"> Gen
+          <input type="radio" name="category" value="OBC"> OBC
+          <input type="radio" name="category" value="SC/ST"> SC/ST
+        </td>
+        <td><strong>Handicapped</strong></td>
+        <td>
+          <input type="radio" name="handicapped" value="yes"> Yes
+          <input type="radio" name="handicapped" value="no"> NO
+        </td>
+      </tr>
+
+      <tr>
+        <td><strong>Ex-Serviceman</strong></td>
+        <td>
+          <input type="radio" name="exservice" value="yes"> Yes
+          <input type="radio" name="exservice" value="no"> NO
+        </td>
+        <td><strong>EWS</strong></td>
+        <td>
+          <input type="radio" name="ews" value="yes"> Yes
+          <input type="radio" name="ews" value="no"> NO
+        </td>
+      </tr>
+
+      <tr>
+        <td><strong>Email ID</strong></td>
+        <td><input type="email"></td>
+        <td><strong>Mobile No.</strong></td>
+        <td><input type="text"></td>
+      </tr>
+
+      <tr>
+        <td><strong>State</strong></td>
+        <td>
+          <select>
+            <option>Select any One</option>
+            <option>Uttar Pradesh</option>
+            <option>Maharashtra</option>
+            <option>Tamil Nadu</option>
+            <option>Others</option>
+          </select>
+        </td>
+        <td><strong>City</strong></td>
+        <td>
+          <select>
+            <option>Select any One</option>
+            <option>Lucknow</option>
+            <option>Mumbai</option>
+            <option>Chennai</option>
+            <option>Other</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td><strong>Upload Photo</strong></td>
+        <td><input type="file"></td>
+        <td><strong>Upload Signature</strong></td>
+        <td><input type="file"></td>
+      </tr>
+
+      <tr>
+        <td colspan="4" style="text-align: center;">
+          <input type="submit" value="Submit">
+        </td>
+      </tr>
+
+    </table>
+  </form>
+
+</body>
+</html>

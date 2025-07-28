@@ -1,0 +1,118 @@
+<!-- Devam Pandey
+23BCE10731 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Doctor Appointment Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+    h2 {
+      text-align: center;
+      color: black;
+      border-bottom: 3px solid red;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+    form {
+      width: 80%;
+      margin: auto;
+    }
+    .form-row {
+      display: flex;
+      margin-bottom: 15px;
+      align-items: center;
+    }
+    .form-row label {
+      width: 200px;
+      font-weight: bold;
+    }
+    .form-row input[type="text"],
+    .form-row input[type="tel"],
+    .form-row input[type="date"],
+    .form-row input[type="time"],
+    .form-row textarea {
+      padding: 5px;
+      width: 200px;
+    }
+    .form-row textarea {
+      width: 400px;
+      height: 80px;
+    }
+    .form-row .short-input {
+      width: 100px;
+      margin-right: 10px;
+    }
+    .form-row .checkboxes {
+      display: flex;
+      flex-direction: column;
+    }
+    input[type="submit"] {
+      margin-left: 200px;
+      padding: 8px 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Doctor Appointment Form</h2>
+
+  <form>
+    <div class="form-row">
+      <label>Appointment Date</label>
+      <input type="date" required>
+    </div>
+
+    <div class="form-row">
+      <label>Appointment Time</label>
+      <input type="time" required>
+    </div>
+
+    <div class="form-row">
+      <label>Name</label>
+      <input type="text" placeholder="First" class="short-input">
+      <input type="text" placeholder="Last" class="short-input">
+    </div>
+
+    <div class="form-row">
+      <label>Gender</label>
+      <input type="radio" name="gender" value="Male"> Male
+      <input type="radio" name="gender" value="Female"> Female
+    </div>
+
+    <div class="form-row">
+      <label>Phone</label>
+      <input type="tel" placeholder="#####" required>
+    </div>
+
+    <div class="form-row">
+      <label>Address</label>
+      <input type="text" placeholder="city" class="short-input">
+      <input type="text" placeholder="state" class="short-input">
+    </div>
+
+    <div class="form-row">
+      <label>Your Query</label>
+      <textarea placeholder="Type here..."></textarea>
+    </div>
+
+    <div class="form-row">
+      <label>Appointment Type</label>
+      <div class="checkboxes">
+        <label><input type="checkbox"> Cervix checkup</label>
+        <label><input type="checkbox"> Heart checkup</label>
+        <label><input type="checkbox"> Eye check-up</label>
+        <label><input type="checkbox"> Hearing Test</label>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <input type="submit" value="Send">
+    </div>
+  </form>
+
+</body>
+</html>

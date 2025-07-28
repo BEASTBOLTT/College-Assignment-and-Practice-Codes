@@ -1,0 +1,10 @@
+num=int(input("enter the number: "))
+factors=[]
+divisor=2
+for i in range(num):
+    for i in range(divisor, num + 1):
+        if num % i == 0:
+            factors.append(i)
+            num //= i
+            break
+print(factors)

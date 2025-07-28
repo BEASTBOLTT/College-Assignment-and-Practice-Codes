@@ -1,0 +1,21 @@
+list1=[1,5,34,56,3,7,57,356,7,24,8,697,0,2]
+list2=[2,3,54,2,56,87,54,2,7,9,0,556,83,4,67,4]
+set1=set(list1)
+set2=set(list2)
+print(set1)
+print(set2)
+print("Length of set1 using Len() operation :",len(set1))
+set3={7,8,65,654,34,0,9,2}
+print("update of set2 using update() operation :",set2.update(set3))
+print("adding in set1 using add() operation :",set1.add("python"))
+print("difference of set2 and set1 using difference() operation :",set2.difference(set1))
+print("difference and updation of set2 using dfference_update() operation :",set2.difference_update(set3))
+print("Clearing of set3 using clear() operation :",set3.clear())
+print("Union of set1 and set2 using Union() operation :",set2.union(set1))
+print("Intersection of set1 and set2 using intersection() operation :",set2.intersection(set1))
+print("Intersection and updation of set2 using intersection_update() operation :",set2.intersection_update(set1))
+print("Discarding of 697 from set1 using dicard() operation :",set1.discard(697))
+print("Checking if set 2 is a subset of set1 using issubset() operation :",set2.issubset(set1))
+print("Checking if set 2 is disjoint to set1 using isdisjoint() operation :",set2.isdisjoint(set1))
+print("popping an element of set1 using pop() operation :",set1.pop())
+print("Freezing set1 using frozenset() operation :",frozenset(set1))
