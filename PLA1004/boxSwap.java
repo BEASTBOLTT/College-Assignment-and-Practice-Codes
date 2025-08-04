@@ -1,6 +1,3 @@
-    import java.util.Collections;
-    
-
 public class boxSwap{
     public static void main(String[] args){
         
