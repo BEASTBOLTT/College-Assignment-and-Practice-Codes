@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q10</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h2>Names List</h2>
+    <ul id="list">
+        <li>Ravi</li>
+        <li>Aarav</li>
+        <li>Kiran</li>
+        <li>Devam</li>
+        <li>Meera</li>
+    </ul>
+
+    <button id="sortBtn">Sort Alphabetically</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#sortBtn").click(function(){
+                // Grab all list items into array
+                var items = $("#list li").get();
+
+                // Sort based on text inside <li>
+                items.sort(function(a, b) {
+                    return $(a).text().localeCompare($(b).text());
+                });
+
+                // Empty and append sorted items in one go
+                $("#list").empty().append(items);
+            });
+        });
+    </script>
+
+</body>
+</html>

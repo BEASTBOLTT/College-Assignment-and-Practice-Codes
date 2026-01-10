@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q9</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h2 id="msg">This is the original text.</h2>
+    <button id="changeText">Change Text</button>
+    <button id="changeColor">Change Color</button>
+    <button id="hideText">Hide Text</button>
+    <button id="showText">Show Text</button>
+
+    <script>
+        $(document).ready(function(){
+            // Change text
+            $("#changeText").click(function(){
+                $("#msg").text("Hello, jQuery changed me!");
+            });
+
+            // Change color
+            $("#changeColor").click(function(){
+                $("#msg").css("color", "blue");
+            });
+
+            // Hide text
+            $("#hideText").click(function(){
+                $("#msg").hide();
+            });
+
+            // Show text
+            $("#showText").click(function(){
+                $("#msg").show();
+            });
+        });
+    </script>
+
+</body>
+</html>
