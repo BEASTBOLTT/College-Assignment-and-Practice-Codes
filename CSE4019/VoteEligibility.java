@@ -26,5 +26,8 @@ public class VoteEligibility {
         } catch (InvalidAgeException e) {
             System.out.println(e.getMessage());
         }
+        sc.close();
     }
+
+    
 }
